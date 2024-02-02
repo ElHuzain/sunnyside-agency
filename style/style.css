@@ -92,6 +92,10 @@ header ul[data-visible] {
   header {
     padding: 46px 40px;
   }
+  header img {
+    height: 33px;
+    width: 170px;
+  }
   header ul {
     position: static;
     opacity: 1;

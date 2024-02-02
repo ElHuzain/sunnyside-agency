@@ -78,7 +78,10 @@ header {
     header {
 
         padding: 46px 40px;
-
+        img {
+            height: 33px;
+            width: 170px;
+        }
         ul {
             position: static;
             opacity: 1;
