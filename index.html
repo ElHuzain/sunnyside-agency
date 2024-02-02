@@ -14,12 +14,16 @@
 
   <style>
     .attribution {
+      padding: 1rem;
+      font-family: 'barlow', arial;
+      background-color: #313131;
+      color: white;
       font-size: 11px;
       text-align: center;
     }
 
     .attribution a {
-      color: hsl(228, 45%, 44%);
+      color: hsl(50, 73%, 61%) !important;
     }
   </style>
 </head>
@@ -39,7 +43,7 @@
       </ul>
 
       <button onClick="toggleMobileNav()"><img alt="hamburger-button" onClick=""
-          src="../images/icon-hamburger.svg" /></button>
+          src="images/icon-hamburger.svg" /></button>
     </nav>
   </header>
 
@@ -48,7 +52,7 @@
     <section id="hero">
       <div class="content">
         <h1>We are creatives</h1>
-        <a href="#features"><img alt="scroll-down" src="/images/icon-arrow-down.svg" /></a>
+        <a href="#features"><img alt="scroll-down" src="images/icon-arrow-down.svg" /></a>
       </div>
     </section>
 
@@ -126,9 +130,9 @@
       <div class="container">
         <h2> Client testimonials</h2>
         <div class="list">
-          <article>
+          <article aria-labelledby="emily">
             <div class="img-container">
-              <img alt="emily-profile" src="../images/image-emily.jpg" />
+              <img alt="emily-profile" src="images/image-emily.jpg" />
             </div>
 
             <p>
@@ -136,15 +140,15 @@
               hit.
             </p>
 
-            <span class="author">
+            <h3 id="emily" class="author">
               <span class="name">Emily R.</span><br />
               <span class="title"> Marketing Director</span>
-            </span>
+            </h3>
           </article>
 
-          <article>
+          <article aria-labelledby="thomas">
             <div class="img-container">
-              <img alt="emily-profile" src="../images/image-thomas.jpg" />
+              <img alt="emily-profile" src="images/image-thomas.jpg" />
             </div>
 
             <p>
@@ -153,45 +157,76 @@
               experience.
             </p>
 
-            <span class="author">
+            <h3 id="thomas" class="author">
               <span class="name">Thomas S.</span><br />
               <span class="title"> Chief Operating Officer</span>
-            </span>
+            </h3>
 
           </article>
 
-          <article>
+          <article aria-labelledby="jennie">
             <div class="img-container">
-              <img alt="emily-profile" src="../images/image-jennie.jpg" />
+              <img alt="emily-profile" src="images/image-jennie.jpg" />
             </div>
             <p>
               Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
             </p>
-            <span class="author">
+            <h3 id="jennie" class="author">
               <span class="name">Jennie F.</span><br />
               <span class="title">Business Owner</span>
-            </span>
-          </article>
+              </span>
+            </h3>
         </div>
       </div>
     </section>
-
   </main>
+  <footer>
+    <div aria-hidden="true" class="decoration">
+      <picture>
+        <source srcset="images/mobile/image-gallery-milkbottles.jpg" media="(max-width: 767px)" />
+        <img src="images/desktop/image-gallery-milkbottles.jpg" alt="milk-bottles" />
+      </picture>
+      <picture>
+        <source srcset="images/mobile/image-gallery-orange.jpg" media="(max-width: 767px)" />
+        <img src="images/desktop/image-gallery-orange.jpg" alt="orange" />
+      </picture>
+      <picture>
+        <source srcset="images/mobile/image-gallery-cone.jpg" media="(max-width: 767px)" />
+        <img src="images/desktop/image-gallery-cone.jpg" alt="cone" />
+      </picture>
+      <picture>
+        <source srcset="images/mobile/image-gallery-sugar-cubes.jpg" media="(max-width: 767px)" />
+        <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugar-cubes" />
+      </picture>
+    </div>
 
+    <div class="footer">
 
+      <div>
+        <a href="#hero"><img  fill="#2C7566" alt="sunny-logo" src="images/logo-dark.svg" /></a>
+      </div>
 
+      <ul aria-label="navigation" class="navigation">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
 
+      <ul aria-label="contacts" class="contacts">
+        <li><a href="#"><img alt="facebook-logo" src="images/icon-facebook.svg" /></a></li>
+        <li><a href="#"><img alt="instagram-logo" src="images/icon-instagram.svg" /></a></li>
+        <li><a href="#"><img alt="twitter-logo" src="images/icon-twitter.svg" /></a></li>
+        <li><a href="#"><img alt="pinterest-logo" src="images/icon-pinterest.svg" /></a></li>
+      </ul>
 
+    </div>
 
+  </footer>
 
-  About
-  Services
-  Projects
-  Contact
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://elhuzain.github.io/Portfolio" target="_blank">Ahmed Huzain</a>.
   </div>
 </body>
 

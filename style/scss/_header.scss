@@ -2,6 +2,7 @@ header {
     padding: 32px 16px;
     position: absolute;
     width: 100%;
+
     nav {
         display: flex;
         align-items: center;
@@ -9,6 +10,7 @@ header {
     }
 
     ul {
+        z-index: 20;
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -19,7 +21,6 @@ header {
         left: 0px;
         right: 0px;
         top: 100px;
-        // top: 120px;
         list-style-type: none;
         margin: 0 16px;
 
@@ -44,19 +45,23 @@ header {
         font-family: 'barlow';
         cursor: pointer !important;
         font-size: 20px;
-        color: #808397;
+        color: #808397 !important;
 
         &.button {
-            margin-top: 30px !important;
+            position: relative;
             border-radius: 28px;
             background-color: #FBD600;
-            color: black;
+            color: black !important;
             padding: 1rem 2rem;
             font-family: 'Fraunces', arial;
             font-weight: bold;
             text-transform: uppercase;
             font-size: 15px;
         }
+    }
+
+    li:last-of-type {
+        margin: 16px 0 !important;
     }
 
     ul[data-visible] {
@@ -71,7 +76,7 @@ header {
 
 @media only screen and (min-width: 768px) {
     header {
-    
+
         padding: 46px 40px;
 
         ul {
@@ -85,20 +90,24 @@ header {
             margin: 0;
             transform: unset;
             pointer-events: all;
-            color: white;
 
             a {
                 font-size: 18px;
+                color: white !important;
 
                 &.button {
                     transition: background-color .2s, color .2s;
-                    background-color: white;
+                    background-color: white !important;
 
                     &:hover {
-                        color: white;
-                        background-color: rgba(255, 255, 255, 0.25);
+                        color: white !important;
+                        background-color: rgba(255, 255, 255, 0.25) !important;
                     }
                 }
+            }
+
+            li:last-of-type {
+                margin: 0 !important;
             }
 
 

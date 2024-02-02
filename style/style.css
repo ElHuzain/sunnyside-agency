@@ -14,8 +14,8 @@ a,
 a:visited,
 a:hover,
 a:active {
-  color: unset;
   text-decoration: none;
+  list-style-type: none !important;
 }
 
 button {
@@ -34,6 +34,7 @@ header nav {
   justify-content: space-between;
 }
 header ul {
+  z-index: 20;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -65,18 +66,21 @@ header ul a {
   font-family: "barlow";
   cursor: pointer !important;
   font-size: 20px;
-  color: #808397;
+  color: #808397 !important;
 }
 header ul a.button {
-  margin-top: 30px !important;
+  position: relative;
   border-radius: 28px;
   background-color: #FBD600;
-  color: black;
+  color: black !important;
   padding: 1rem 2rem;
   font-family: "Fraunces", arial;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 15px;
+}
+header li:last-of-type {
+  margin: 16px 0 !important;
 }
 header ul[data-visible] {
   pointer-events: all;
@@ -99,18 +103,21 @@ header ul[data-visible] {
     margin: 0;
     transform: unset;
     pointer-events: all;
-    color: white;
   }
   header ul a {
     font-size: 18px;
+    color: white !important;
   }
   header ul a.button {
     transition: background-color 0.2s, color 0.2s;
-    background-color: white;
+    background-color: white !important;
   }
   header ul a.button:hover {
-    color: white;
-    background-color: rgba(255, 255, 255, 0.25);
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0.25) !important;
+  }
+  header ul li:last-of-type {
+    margin: 0 !important;
   }
   header ul::before {
     content: unset;
@@ -450,6 +457,72 @@ header ul[data-visible] {
 @media only screen and (min-width: 1160px) {
   #testimonies .container .list {
     gap: 30px;
+  }
+}
+footer {
+  background-color: #90D4C6;
+}
+footer .decoration {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+footer .decoration picture {
+  height: 188px;
+}
+footer .decoration img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+footer .footer {
+  padding-top: 64px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .footer ul {
+  list-style-type: none;
+}
+footer .footer ul li a {
+  color: #458D7E !important;
+}
+footer .footer ul li a:hover {
+  color: white !important;
+}
+footer .footer .navigation {
+  margin-top: 40px;
+  margin-bottom: 88px;
+  display: flex;
+  font-family: "barlow", arial;
+  font-weight: 500;
+  font-size: 18px;
+}
+footer .footer .navigation li:nth-of-type(2) {
+  margin: 0 57px;
+}
+footer .footer .contacts {
+  display: flex;
+  gap: 28px;
+}
+footer .footer .contacts img {
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  footer .decoration {
+    max-width: 1440px;
+    margin: 0 auto;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  footer .decoration picture {
+    height: unset;
+  }
+  footer .footer {
+    padding-top: 72px;
+    padding-bottom: 72px;
   }
 }
 
