@@ -7,6 +7,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 a,
@@ -142,7 +143,7 @@ header ul[data-visible] {
   align-items: center;
   gap: 52px;
 }
-#hero .content button {
+#hero .content a {
   cursor: pointer;
   animation: up-down 0.7s infinite ease-in-out alternate;
 }
@@ -164,6 +165,202 @@ header ul[data-visible] {
   }
   to {
     transform: translateY(10px);
+  }
+}
+#features {
+  display: grid;
+  text-align: center;
+  letter-spacing: -0.13px;
+}
+#features .group {
+  display: flex;
+  flex-direction: column-reverse;
+}
+#features .group.stand {
+  flex-direction: column;
+}
+#features .no-reverse {
+  flex-direction: column;
+}
+#features .content {
+  padding: 64px 0;
+  display: flex;
+  justify-content: center;
+}
+#features .image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 312px;
+  aspect-ratio: 1/1;
+  width: 100%;
+  max-height: 600px;
+}
+#features .image.transform {
+  background-image: url("/images/mobile/image-transform.jpg");
+}
+#features .image.stand {
+  background-image: url("/images/mobile/image-stand-out.jpg");
+}
+#features h3 {
+  font-family: "fraunces", arial;
+  font-size: 32px;
+  font-weight: 900;
+  color: #24303E;
+}
+#features p {
+  font-size: 18px;
+  font-family: "barlow", arial;
+  color: #808397;
+  line-height: 30px;
+  font-weight: 500;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+#features a {
+  font-family: "fraunces", arial;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 20;
+}
+#features a:hover::after {
+  opacity: 1;
+}
+#features a::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  transition: opacity 0.3s;
+  bottom: -2px;
+  left: -7px;
+  right: -7px;
+  opacity: 0.25;
+  height: 10px;
+  border-radius: 28px;
+  background-color: #FE7766;
+}
+#features a.yellow::after {
+  background-color: #FAD400;
+}
+#features .container {
+  max-width: 327px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#features .content-image {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  min-height: 600px;
+  padding-bottom: 55px;
+}
+#features .content-image h3 {
+  text-transform: capitalize;
+}
+#features .content-image p {
+  line-height: 27px;
+}
+#features .content-image.graphic {
+  background-image: url("/images/mobile/image-graphic-design.jpg");
+}
+#features .content-image.graphic h3,
+#features .content-image.graphic p {
+  color: #24554A;
+}
+#features .content-image.photo {
+  background-image: url("/images/mobile/image-photography.jpg");
+}
+#features .content-image.photo h3,
+#features .content-image.photo p {
+  color: #19536C;
+}
+#features .content-image .container {
+  height: fit-content;
+}
+#features img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  #features {
+    display: grid;
+    text-align: left;
+    letter-spacing: -0.13px;
+  }
+  #features h3 {
+    width: 100%;
+  }
+  #features > div {
+    max-height: 600px;
+    overflow: hidden;
+  }
+  #features .group {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  #features .no-reverse {
+    flex-direction: column;
+  }
+  #features .content {
+    padding: 64px 0;
+  }
+  #features .image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 1/1;
+    min-height: 400px !important;
+    width: 100%;
+  }
+  #features .image.transform {
+    background-image: url("/images/desktop/image-transform.jpg");
+  }
+  #features .image.stand {
+    background-image: url("/images/desktop/image-stand-out.jpg");
+  }
+  #features h3 {
+    font-family: "fraunces", arial;
+    font-size: 32px;
+    font-weight: 900;
+  }
+  #features p {
+    font-size: 18px;
+    font-family: "barlow", arial;
+    color: #808397;
+    line-height: 30px;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+  #features a {
+    margin-right: auto;
+  }
+  #features .container {
+    max-width: 445px;
+    margin: 0 16px;
+  }
+  #features .content-image {
+    text-align: center !important;
+  }
+  #features .content-image.graphic {
+    background-image: url("/images/desktop/image-graphic-design.jpg");
+  }
+  #features .content-image.photo {
+    background-image: url("/images/desktop/image-photography.jpg");
+  }
+  #features .content-image p {
+    width: 339px;
   }
 }
 

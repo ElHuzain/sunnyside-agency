@@ -1,0 +1,247 @@
+#features {
+    display: grid;
+    text-align: center;
+    letter-spacing: -0.13px;
+
+    .group {
+        display: flex;
+        flex-direction: column-reverse;
+
+        &.stand {
+            flex-direction: column;
+        }
+    }
+
+    .no-reverse {
+        flex-direction: column;
+    }
+
+    .content {
+        padding: 64px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 312px;
+        aspect-ratio: 1/1;
+        width: 100%;
+        max-height: 600px;
+
+        &.transform {
+            background-image: url('/images/mobile/image-transform.jpg');
+        }
+
+        &.stand {
+            background-image: url('/images/mobile/image-stand-out.jpg');
+        }
+    }
+
+    h3 {
+        font-family: 'fraunces', arial;
+        font-size: 32px;
+        font-weight: 900;
+        color: #24303E;
+    }
+
+    p {
+        font-size: 18px;
+        font-family: 'barlow', arial;
+        color: #808397;
+        line-height: 30px;
+        font-weight: 500;
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+
+    a {
+        font-family: 'fraunces', arial;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 20;
+
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &::after {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            transition: opacity .3s;
+            bottom: -2px;
+            left: -7px;
+            right: -7px;
+            opacity: 0.25;
+            height: 10px;
+            border-radius: 28px;
+            background-color: #FE7766;
+        }
+
+        &.yellow::after {
+            background-color: #FAD400;
+        }
+    }
+
+    .container {
+        max-width: 327px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+
+    .content-image {
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: end;
+        align-items: center;
+        min-height: 600px;
+
+        padding-bottom: 55px;
+
+
+
+        h3 {
+            text-transform: capitalize;
+        }
+
+        p {
+            line-height: 27px;
+        }
+
+        &.graphic {
+            background-image: url('/images/mobile/image-graphic-design.jpg');
+
+            h3,
+            p {
+                color: #24554A;
+            }
+        }
+
+        &.photo {
+            background-image: url('/images/mobile/image-photography.jpg');
+
+            h3,
+            p {
+                color: #19536C;
+            }
+
+        }
+
+        .container {
+            height: fit-content
+        }
+    }
+
+
+
+    img {
+        width: 100%;
+    }
+
+}
+
+@media only screen AND (min-width: 768px) {
+    #features {
+        display: grid;
+        text-align: left;
+        letter-spacing: -0.13px;
+
+        h3 {
+            width: 100%;
+        }
+
+        &>div {
+            max-height: 600px;
+            overflow: hidden;
+        }
+
+        .group {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        .no-reverse {
+            flex-direction: column;
+        }
+
+        .content {
+            padding: 64px 0;
+        }
+
+        .image {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            aspect-ratio: 1/1;
+            min-height: 400px !important;
+            width: 100%;
+
+            &.transform {
+                background-image: url('/images/desktop/image-transform.jpg');
+            }
+
+            &.stand {
+                background-image: url('/images/desktop/image-stand-out.jpg');
+            }
+        }
+
+        h3 {
+            font-family: 'fraunces', arial;
+            font-size: 32px;
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 18px;
+            font-family: 'barlow', arial;
+            color: #808397;
+            line-height: 30px;
+            font-weight: 500;
+            margin-top: 24px;
+            margin-bottom: 32px;
+        }
+
+        a {
+            margin-right: auto;
+        }
+
+        .container {
+            max-width: 445px;
+            margin: 0 16px;
+        }
+
+        .content-image {
+            text-align: center !important;
+
+            &.graphic {
+                background-image: url('/images/desktop/image-graphic-design.jpg');
+            }
+
+            &.photo {
+                background-image: url('/images/desktop/image-photography.jpg');
+            }
+
+            p {
+                width: 339px;
+            }
+        }
+
+    }
+}
