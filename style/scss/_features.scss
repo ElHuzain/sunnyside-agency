@@ -32,11 +32,11 @@
         max-height: 600px;
 
         &.transform {
-            background-image: url('/images/mobile/image-transform.jpg');
+            background-image: url('images/mobile/image-transform.jpg');
         }
 
         &.stand {
-            background-image: url('/images/mobile/image-stand-out.jpg');
+            background-image: url('images/mobile/image-stand-out.jpg');
         }
     }
 
@@ -126,7 +126,7 @@
         }
 
         &.graphic {
-            background-image: url('/images/mobile/image-graphic-design.jpg');
+            background-image: url('images/mobile/image-graphic-design.jpg');
 
             h3,
             p {
@@ -135,7 +135,7 @@
         }
 
         &.photo {
-            background-image: url('/images/mobile/image-photography.jpg');
+            background-image: url('images/mobile/image-photography.jpg');
 
             h3,
             p {
@@ -194,11 +194,11 @@
             width: 100%;
 
             &.transform {
-                background-image: url('/images/desktop/image-transform.jpg');
+                background-image: url('images/desktop/image-transform.jpg');
             }
 
             &.stand {
-                background-image: url('/images/desktop/image-stand-out.jpg');
+                background-image: url('images/desktop/image-stand-out.jpg');
             }
         }
 
@@ -231,11 +231,11 @@
             text-align: center !important;
 
             &.graphic {
-                background-image: url('/images/desktop/image-graphic-design.jpg');
+                background-image: url('images/desktop/image-graphic-design.jpg');
             }
 
             &.photo {
-                background-image: url('/images/desktop/image-photography.jpg');
+                background-image: url('images/desktop/image-photography.jpg');
             }
 
             p {

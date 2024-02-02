@@ -2,7 +2,7 @@
     height: 538px;
     // height: 100dvh;
     width: 100%;
-    background-image: url('/images/mobile/image-header.jpg');
+    background-image: url('images/mobile/image-header.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 88px;
@@ -35,7 +35,7 @@
 @media only screen and (min-width: 768px) {
     #hero {
         height: 800px;
-        background-image: url('/images/desktop/image-header.jpg');
+        background-image: url('images/desktop/image-header.jpg');
         background-position-x: center;
         padding-top: 250px;
 
