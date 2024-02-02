@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+    font: inherit;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: unset;
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}

@@ -1,0 +1,115 @@
+header {
+    background-color: blue;
+    padding: 32px 16px;
+    position: absolute;
+    width: 100%;
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        text-align: center;
+        gap: 2rem;
+        padding: 40px 0;
+        left: 0px;
+        right: 0px;
+        top: 100px;
+        // top: 120px;
+        list-style-type: none;
+        margin: 0 16px;
+
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all .3s;
+        pointer-events: none;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: -24px;
+            right: 0;
+            border-left: 24px solid transparent;
+            border-bottom: 24px solid white;
+        }
+    }
+
+    ul a {
+        font-family: 'barlow';
+        cursor: pointer !important;
+        font-size: 20px;
+        color: #808397;
+
+        &.button {
+            margin-top: 30px !important;
+            border-radius: 28px;
+            background-color: #FBD600;
+            color: black;
+            padding: 1rem 2rem;
+            font-family: 'Fraunces', arial;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+    }
+
+    ul[data-visible] {
+        pointer-events: all;
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+// Desktop
+
+@media only screen and (min-width: 768px) {
+    header {
+    
+        padding: 46px 40px;
+
+        ul {
+            position: static;
+            opacity: 1;
+            gap: 47px;
+            padding: 0;
+            flex-direction: row;
+            background-color: transparent;
+            text-align: center;
+            margin: 0;
+            transform: unset;
+            pointer-events: all;
+            color: white;
+
+            a {
+                font-size: 18px;
+
+                &.button {
+                    transition: background-color .2s, color .2s;
+                    background-color: white;
+
+                    &:hover {
+                        color: white;
+                        background-color: rgba(255, 255, 255, 0.25);
+                    }
+                }
+            }
+
+
+            &::before {
+                content: unset;
+            }
+        }
+
+        button {
+            display: none;
+        }
+    }
+}
