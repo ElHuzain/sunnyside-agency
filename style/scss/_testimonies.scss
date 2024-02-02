@@ -1,0 +1,106 @@
+#testimonies {
+    padding: 64px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+            font-family: 'fraunces', arial;
+            font-weight: 900;
+            letter-spacing: 5px;
+            color: #A7AAAD;
+            text-transform: uppercase;
+            margin-bottom: 64px;
+        }
+    }
+
+    .list {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    article {
+        width: 327px;
+
+        .img-container {
+            width: 72px;
+            aspect-ratio: 1/1;
+            border-radius: 100px;
+            overflow: hidden;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        p {
+            margin: 2rem 0;
+            font-family: 'Barlow', arial;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 32px;
+            color: #5B636D;
+        }
+
+        .author {
+
+            .name {
+                font-family: 'fraunces', arial;
+                font-size: 18px;
+                font-weight: 900;
+                line-height: 32px;
+                color: #24303E;
+            }
+
+            .title {
+                font-family: 'barlow', arial;
+                font-size: 14px;
+                font-weight: 500;
+                color: #A7AAAD;
+            }
+        }
+    }
+}
+
+
+@media only screen AND (min-width: 1024px) {
+    #testimonies {
+        padding: 0;
+        height: 777px;
+
+        .container {
+            height: fit-content;
+            h2 {
+                font-size: 20px;
+                margin-bottom: 81px;
+            }
+            .list {
+                flex-direction: row;
+                gap: 14px;
+
+                article {
+                    width: 350px;
+                    
+                    p {
+                        margin-top: 58px;
+                        margin-bottom: 69px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen AND (min-width: 1160px) {
+    #testimonies .container .list {
+        gap: 30px;
+    }
+}
