@@ -23,7 +23,6 @@ button {
 }
 
 header {
-  background-color: blue;
   padding: 32px 16px;
   position: absolute;
   width: 100%;
@@ -117,6 +116,54 @@ header ul[data-visible] {
   }
   header button {
     display: none;
+  }
+}
+#hero {
+  height: 538px;
+  width: 100%;
+  background-image: url("/images/mobile/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 88px;
+  text-align: center;
+  color: white;
+  font-family: "fraunces", arial;
+  font-weight: 900;
+  font-size: 40px;
+  letter-spacing: 6.25px;
+  text-transform: uppercase;
+}
+#hero .content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 52px;
+}
+#hero .content button {
+  cursor: pointer;
+  animation: up-down 0.7s infinite ease-in-out alternate;
+}
+
+@media only screen and (min-width: 768px) {
+  #hero {
+    height: 800px;
+    background-image: url("/images/desktop/image-header.jpg");
+    background-position-x: center;
+    padding-top: 250px;
+  }
+  #hero .content {
+    justify-content: start;
+  }
+}
+@keyframes up-down {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
   }
 }
 
