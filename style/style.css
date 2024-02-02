@@ -533,6 +533,14 @@ footer .footer .contacts img {
     padding-top: 72px;
     padding-bottom: 72px;
   }
+  footer .footer .logo {
+    width: 170px;
+    height: 33px;
+  }
+  footer .footer .logo img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
