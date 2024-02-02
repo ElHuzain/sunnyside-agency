@@ -161,6 +161,7 @@ header ul[data-visible] {
     background-image: url("../images/desktop/image-header.jpg");
     background-position-x: center;
     padding-top: 250px;
+    font-size: 55px;
   }
   #hero .content {
     justify-content: start;
@@ -178,6 +179,7 @@ header ul[data-visible] {
   display: grid;
   text-align: center;
   letter-spacing: -0.13px;
+  background-color: #FFFCF8;
 }
 #features .group {
   display: flex;
@@ -338,7 +340,7 @@ header ul[data-visible] {
   }
   #features h3 {
     font-family: "fraunces", arial;
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 900;
   }
   #features p {
