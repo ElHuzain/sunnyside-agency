@@ -122,7 +122,7 @@ header ul[data-visible] {
 #hero {
   height: 538px;
   width: 100%;
-  background-image: url("./images/mobile/image-header.jpg");
+  background-image: url("../images/mobile/image-header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 88px;
@@ -151,7 +151,7 @@ header ul[data-visible] {
 @media only screen and (min-width: 768px) {
   #hero {
     height: 800px;
-    background-image: url("images/desktop/image-header.jpg");
+    background-image: url("../images/desktop/image-header.jpg");
     background-position-x: center;
     padding-top: 250px;
   }
@@ -197,10 +197,10 @@ header ul[data-visible] {
   max-height: 600px;
 }
 #features .image.transform {
-  background-image: url("images/mobile/image-transform.jpg");
+  background-image: url("../images/mobile/image-transform.jpg");
 }
 #features .image.stand {
-  background-image: url("images/mobile/image-stand-out.jpg");
+  background-image: url("../images/mobile/image-stand-out.jpg");
 }
 #features h3 {
   font-family: "fraunces", arial;
@@ -272,14 +272,14 @@ header ul[data-visible] {
   line-height: 27px;
 }
 #features .content-image.graphic {
-  background-image: url("images/mobile/image-graphic-design.jpg");
+  background-image: url("../images/mobile/image-graphic-design.jpg");
 }
 #features .content-image.graphic h3,
 #features .content-image.graphic p {
   color: #24554A;
 }
 #features .content-image.photo {
-  background-image: url("images/mobile/image-photography.jpg");
+  background-image: url("../images/mobile/image-photography.jpg");
 }
 #features .content-image.photo h3,
 #features .content-image.photo p {
@@ -324,10 +324,10 @@ header ul[data-visible] {
     width: 100%;
   }
   #features .image.transform {
-    background-image: url("images/desktop/image-transform.jpg");
+    background-image: url("../images/desktop/image-transform.jpg");
   }
   #features .image.stand {
-    background-image: url("images/desktop/image-stand-out.jpg");
+    background-image: url("../images/desktop/image-stand-out.jpg");
   }
   #features h3 {
     font-family: "fraunces", arial;
@@ -354,10 +354,10 @@ header ul[data-visible] {
     text-align: center !important;
   }
   #features .content-image.graphic {
-    background-image: url("images/desktop/image-graphic-design.jpg");
+    background-image: url("../images/desktop/image-graphic-design.jpg");
   }
   #features .content-image.photo {
-    background-image: url("images/desktop/image-photography.jpg");
+    background-image: url("../images/desktop/image-photography.jpg");
   }
   #features .content-image p {
     width: 339px;
