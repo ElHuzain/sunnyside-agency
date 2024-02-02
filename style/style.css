@@ -164,11 +164,14 @@ header ul[data-visible] {
     height: 800px;
     background-image: url("../images/desktop/image-header.jpg");
     background-position-x: center;
-    padding-top: 250px;
+    padding-top: 200px;
     font-size: 55px;
   }
   #hero .content {
     justify-content: start;
+  }
+  #hero h1 {
+    margin-bottom: 50px;
   }
 }
 @keyframes up-down {
@@ -183,7 +186,7 @@ header ul[data-visible] {
   display: grid;
   text-align: center;
   letter-spacing: -0.13px;
-  background-color: #FFFCF8;
+  background-color: #FFFBF7;
 }
 #features .group {
   display: flex;
